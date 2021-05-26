@@ -1,9 +1,7 @@
-import logo from "./logo.svg";
-import "./App.css";
 import GoogleLogin from "react-google-login";
 
-function App() {
-  const responseGoogle = (response) => {
+export function App() {
+  const responseGoogle = (response: any) => {
     console.log(response);
   };
   return (
@@ -17,5 +15,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
