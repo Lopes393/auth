@@ -4,6 +4,15 @@ export const Content = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
+
+  input {
+    width: 100%;
+  }
+  input::placeholder {
+    font-size: 10px;
+    opacity: 0.3;
+  }
 `;
 
 export const Container = styled.div`
@@ -18,7 +27,7 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
 
     label {
       margin: 6px 2px;

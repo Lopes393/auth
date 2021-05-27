@@ -25,14 +25,14 @@ export function Login() {
           placeholder="Telefone, nome de usuario ou email"
           state={user}
           setState={setUser}
-          width="75%"
+          width="83%"
         />
         <Input
           type="text"
           placeholder="Senha"
           state={pass}
           setState={setPass}
-          width="75%"
+          width="83%"
         />
         <Actions>
           <Logar>Login</Logar>

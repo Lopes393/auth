@@ -26,14 +26,12 @@ export function Input({
       <div className="InputForm">
         <label>{label}</label>
         <Content>
-          <div>
-            <input
-              type={type}
-              placeholder={placeholder}
-              value={state}
-              onChange={inputChange}
-            />
-          </div>
+          <input
+            type={type}
+            placeholder={placeholder}
+            value={state}
+            onChange={inputChange}
+          />
         </Content>
       </div>
     </Container>
