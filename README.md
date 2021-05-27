@@ -1,6 +1,6 @@
 # Kanima Authentication
 <div align="center" style="display: flex; flex-direction: row">
-  <img alt="Auth Autentication" title="auth-autentication" src="./auth-frontend/.github/login.png" width="250px"/>
+  <img alt="Auth Autentication" title="auth-autentication" src="./auth-frontend/.github/login.png"/>
 </div>
 
 <br/>
