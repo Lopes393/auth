@@ -1,5 +1,5 @@
 import GoogleLogin from "react-google-login";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Container,
   Content,
@@ -11,6 +11,7 @@ import {
 import { Input } from "../../components/Input";
 
 export function Login() {
+  const API_KEY = process.env.REACT_APP_WEATHER_API_KEY as string;
   const responseGoogle = (response: any) => {
     console.log(response);
   };
@@ -44,13 +45,13 @@ export function Login() {
         </div>
         <GoogleLogin
           className="login-google-button"
-          clientId="604854120587-h09ufc01lrb6j9v0t8boghrp2u84gilv.apps.googleusercontent.com"
+          clientId={API_KEY}
           buttonText="Login com o Google"
           onSuccess={responseGoogle}
           onFailure={responseGoogle}
         />
         <CreateAccount>
-          Não tem uma conta?&nbsp;<a href="#">Cadastre-se</a>
+          Não tem uma conta?&nbsp;<a href="">Cadastre-se</a>
         </CreateAccount>
       </Content>
     </Container>
