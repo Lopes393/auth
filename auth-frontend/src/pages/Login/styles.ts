@@ -89,5 +89,7 @@ export const CreateAccount = styled.div`
   word-spacing: -1px;
 
   a {
+    text-decoration: none;
+    font-weight: 500;
   }
 `;
