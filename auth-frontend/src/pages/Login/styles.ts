@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex: 1;
@@ -92,4 +92,37 @@ export const CreateAccount = styled.div`
     text-decoration: none;
     font-weight: 500;
   }
+`;
+
+export const Log = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #aaa;
+  width: 15rem;
+  padding: 1rem 2rem;
+  background-color: var(--shape);
+  border: none;
+  border-radius: 0.938rem;
+  box-shadow: 0 0 1em #aaa;
+  margin-left: 10px;
+`;
+
+export const Image = styled.div`
+  border-radius: 0.938rem;
+  box-shadow: 0 0 1em #aaa;
+
+  img {
+    border-radius: 0.938rem;
+  }
+`;
+export const Nome = styled.div`
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin: 1rem 0;
+`;
+export const Email = styled.div`
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
 `;

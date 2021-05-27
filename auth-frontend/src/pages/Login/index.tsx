@@ -7,16 +7,25 @@ import {
   Actions,
   Logar,
   CreateAccount,
+  Log,
+  Image,
+  Email,
+  Nome,
 } from "./styles";
 import { Input } from "../../components/Input";
 
 export function Login() {
   const API_KEY = process.env.REACT_APP_WEATHER_API_KEY as string;
   const responseGoogle = (response: any) => {
-    console.log(response);
+    setEmail(response.profileObj.email);
+    setNome(response.profileObj.name);
+    setFoto(response.profileObj.imageUrl);
   };
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
+  const [email, setEmail] = useState("");
+  const [nome, setNome] = useState("");
+  const [foto, setFoto] = useState("");
   return (
     <Container>
       <Content>
@@ -54,6 +63,17 @@ export function Login() {
           Não tem uma conta?&nbsp;<a href="">Cadastre-se</a>
         </CreateAccount>
       </Content>
+      {email ? (
+        <Log>
+          <Image>
+            <img src={foto} alt="" />
+          </Image>
+          <Nome>{nome}</Nome>
+          <Email>{email}</Email>
+        </Log>
+      ) : (
+        ""
+      )}
     </Container>
   );
 }
