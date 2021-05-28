@@ -1,6 +1,7 @@
 # Kanima Authentication
 <div align="center" style="display: flex; flex-direction: row">
-  <img alt="Auth Autentication" title="auth-autentication" src="./auth-frontend/.github/login.png"/>
+  <!-- <img alt="Auth Autentication" title="auth-autentication" src="./auth-frontend/.github/login.png"/> -->
+  ![](./auth-frontend/.github/kanima.gif)
 </div>
 
 <br/>
