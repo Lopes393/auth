@@ -106,6 +106,11 @@ export const Log = styled.div`
   border-radius: 0.938rem;
   box-shadow: 0 0 1em #aaa;
   margin-left: 10px;
+  position: relative;
+  div.animation {
+    pointer-events: none;
+    position: absolute;
+  }
 `;
 
 export const Image = styled.div`

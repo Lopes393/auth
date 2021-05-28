@@ -1,5 +1,8 @@
-import GoogleLogin from "react-google-login";
 import { useState } from "react";
+import GoogleLogin from "react-google-login";
+import Lottie from "react-lottie";
+import animationData from "../../assets/animations/congradulations.json";
+import { Input } from "../../components/Input";
 import {
   Container,
   Content,
@@ -12,20 +15,35 @@ import {
   Email,
   Nome,
 } from "./styles";
-import { Input } from "../../components/Input";
 
 export function Login() {
   const API_KEY = process.env.REACT_APP_WEATHER_API_KEY as string;
+
   const responseGoogle = (response: any) => {
     setEmail(response.profileObj.email);
     setNome(response.profileObj.name);
     setFoto(response.profileObj.imageUrl);
   };
+
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
   const [email, setEmail] = useState("");
   const [nome, setNome] = useState("");
   const [foto, setFoto] = useState("");
+
+  const [animationState, setAnimationState] = useState({
+    isStopped: false,
+    isPaused: false,
+  });
+
+  const defaultOptions = {
+    loop: false,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <Container>
       <Content>
@@ -70,6 +88,15 @@ export function Login() {
           </Image>
           <Nome>{nome}</Nome>
           <Email>{email}</Email>
+          <div className="animation">
+            <Lottie
+              options={defaultOptions}
+              height={240}
+              width={240}
+              isStopped={animationState.isStopped}
+              isPaused={animationState.isPaused}
+            />
+          </div>
         </Log>
       ) : (
         ""
