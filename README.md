@@ -11,7 +11,7 @@ Projeto desenvolvido com as seguintes tecnologias:
 
 <ul>
     <li>ReactJS</li>
-    <li>Google Login API</li>
+    <li>OAuth 2.0</li>
     <li>React Google Login</li>
     <li>Styled Components</li>
     <li>React Lottie</li>
