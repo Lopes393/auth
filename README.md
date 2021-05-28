@@ -20,5 +20,8 @@ Projeto desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 Desenvolvido para estudo de integrações entre ReactJS e Google API.
-
 Espero que aproveite o melhor do meu esforço, trabalho e dedicação.
+
+<div align="center" style="display: flex; flex-direction: row">
+  <img alt="Auth Autentication" title="auth-autentication" src="./auth-frontend/.github/process.jpg"/>
+</div>
