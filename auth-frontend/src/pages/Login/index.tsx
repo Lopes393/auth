@@ -17,7 +17,7 @@ import {
 } from "./styles";
 
 export function Login() {
-  const API_KEY = process.env.REACT_APP_WEATHER_API_KEY as string;
+  const API_KEY = process.env.REACT_APP_AUTH_API_KEY as string;
 
   const responseGoogle = (response: any) => {
     setEmail(response.profileObj.email);
