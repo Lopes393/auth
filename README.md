@@ -14,6 +14,7 @@ Projeto desenvolvido com as seguintes tecnologias:
     <li>Google Login API</li>
     <li>React Google Login</li>
     <li>Styled Components</li>
+    <li>React Lottie</li>
 </ul>
 
 ## 💻 Projeto
